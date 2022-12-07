@@ -12,9 +12,9 @@ This repository contains discussion, analysis pipelines, files and scripts used 
 
 ## Contents
 
-- [Pipeline Script](https://github.com/suzumar/ROS4_manus/blob/main/files/SSUpipeline.bash) Script used for the data analysis 
+- [Pipeline Script](https://github.com/suzumar/transect_ms/blob/main/files/SSUpipeline.bash) Script used for the data analysis 
 -
-- [Taxonomy Identification Database](https://github.com/suzumar/ROS4_manus/blob/main/files/taxo.md) Database used for ASV identification based on the silva_132_99.fna 
-- [Phylogenetic analyses](https://github.com/suzumar/ROS4_manus/blob/main/files/phylo.md) Phylogenetic analyses of FAD dependent oxidases
+- [Taxonomy Identification Database](https://github.com/suzumar/transect_ms/blob/main/files/taxo.md) Database used for ASV identification based on the silva_132_99.fna 
+- [Phylogenetic analyses](https://github.com/suzumar/transect_ms/blob/main/files/phylo.md) Phylogenetic analyses of FAD dependent oxidases
 - [Genome Submission](https://github.com/suzumar/transect_ms/blob/main/files/subm.md) SRA and genome submission
-- [TYGS results](https://github.com/suzumar/ROS4_manus/blob/main/files/TYGS.md)
+- [TYGS results](https://github.com/suzumar/transect_ms/blob/main/files/TYGS.md)
