@@ -11,9 +11,11 @@ https://www.arb-silva.de/fileadmin/silva_databases/qiime/Silva_132_release.zip
 
 under */Volumes/data/silvardp/SILVA_132_QIIME_release*
 
-`qiime tools import   --type 'FeatureData[Sequence]'   --input-path  rep_set/rep_set_all/99/silva132_99.fna  --output-path all-99_otus.qza`
+`qiime tools import   --type 'FeatureData[Sequence]'   --input-path  rep_set/rep_set_all/99/silva132_99.fna  --output-path all-99_otus.qza`  
 
-`qiime tools import --type 'FeatureData[Taxonomy]'  --input-format HeaderlessTSVTaxonomyFormat  --input-path taxonomy/taxonomy_all/99/majority_taxonomy_7_levels.txt --output-path all-ref-taxonomy.qza`
+`qiime tools import --type 'FeatureData[Taxonomy]'  --input-format HeaderlessTSVTaxonomyFormat  --input-path taxonomy/taxonomy_all/99/majority_taxonomy_7_levels.txt --output-path all-ref-taxonomy.qza`  
+
+[file](https://github.com/suzumar/transect_ms/blob/main/files/all-ref-taxonomy.qza)
 
 `qiime feature-classifier extract-reads  --i-sequences all-99_otus.qza   --p-f-primer GTGYCAGCMGCCGCGGTAA   --p-r-primer CCGYCAATTYMTTTRAGTTT --o-reads all-ref-seqs.qza`
 
@@ -39,6 +41,8 @@ seems like very short sequences are created during the truncation, so filter the
 
 `cat dna-sequences.fasta.fasta | awk '{if(length($2)>319){printf("%s",$1);printf("%s",$2)}}' > dna-sequences-gt319.fasta`
 
+[file](https://github.com/suzumar/transect_ms/blob/main/files/dna-sequences-gt319.fasta)
+
 `cd ../..`
 
 `mv all-ref-seqs.qza all-ref-seqs-b4corr.qza`
@@ -48,3 +52,5 @@ seems like very short sequences are created during the truncation, so filter the
 `rm all-classifier.qza`
 
 `qiime feature-classifier fit-classifier-naive-bayes   --i-reference-reads all-ref-seqs.qza   --i-reference-taxonomy all-ref-taxonomy.qza   --o-classifier all-classifier.qza`
+
+[file](https://figshare.com/articles/dataset/all-classifier_qza_tgz/12820445)
