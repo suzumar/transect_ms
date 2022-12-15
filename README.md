@@ -13,11 +13,12 @@ This repository contains discussion, analysis pipelines, files and scripts used 
 ## Contents
 
 - [Pipeline Script](https://github.com/suzumar/transect_ms/blob/main/files/SSUpipeline.bash) Script used for the data analysis 
-- [Taxonomy Identification Database](https://github.com/suzumar/transect_ms/blob/main/files/taxo.md) Database used for ASV identification based on the silva_132_99.fna release from Silva
+- [Taxonomy Identification Database](https://github.com/suzumar/transect_ms/blob/main/files/taxo.md) Construction of database used for ASV identification based on the silva_132_99.fna release from Silva
+- [SRA submission](https://github.com/suzumar/transect_ms/blob/main/SRA_sub.md)
 
 ## Links
-- Final classifier Qiime artifact
-- Mapping file
-- Taxonomy
-- ASV table biom and txt format
-- Representative sequences
+
+- Final classifier [Qiime artifact](https://figshare.com/articles/dataset/all-classifier_qza_tgz/12820445)
+- [Mapping file](https://github.com/suzumar/transect_ms/blob/main/sample-metadata.tsv)
+- ASV table [biom](https://github.com/suzumar/transect_ms/blob/main/721-752-proka-table-final-full.biom) and [txt](https://github.com/suzumar/transect_ms/blob/main/721-752-proka-table-final-full.txt) format
+- Representative [sequences](https://github.com/suzumar/transect_ms/blob/main/721-752-proka-rep-seqs.qza)
